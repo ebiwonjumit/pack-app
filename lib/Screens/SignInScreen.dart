@@ -15,7 +15,12 @@ class _SignInScreenState extends State<SignInScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Image.asset('images/pack_logo.png'),
+              Image(
+                  image: AssetImage('images/pack_logo.png'),
+                height: 375,
+                width: 375,
+                fit: BoxFit.scaleDown
+              ),
               Text(
                 'Pack',
                 style: TextStyle(
